@@ -1,4 +1,6 @@
 package com.joel.literalura;
+import com.joel.literalura.principal.Principal;
+
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -13,6 +15,7 @@ public class LiteraluraApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception{
-		System.out.println("Hola Mundo");
+		Principal principal = new Principal();
+		principal.muestraMenu();
 	}
 }
